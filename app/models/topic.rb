@@ -13,12 +13,12 @@ class Topic < ActiveRecord::Base
 
   # save後にindexを更新
   def index_update
-    self.index.store self
+    Resque.enqueue(IndexUpdater, :update, self.id)
   end
 
   # destroy後にindexから削除
   def index_remove
-    self.index.remove self
+    Resque.enqueue(IndexUpdater, :delete, self.id)
   end
 
   # 検索

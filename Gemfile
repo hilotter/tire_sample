@@ -46,3 +46,6 @@ end
 
 gem 'tire'
 gem 'kaminari'
+
+gem 'resque'
+gem 'daemon-spawn', :require => 'daemon_spawn'
