@@ -1,3 +1,3 @@
 == README
 
-{this blog's sample code}[http://blog.hello-world.jp.net/?p=905]
+{this blog's sample code}[http://blog.hello-world.jp.net/?p=920]
